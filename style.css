@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+:root {
+  --body-bg: #202733;
+  --container-bg: #313a48;
+  --text-color: #cee3e9;
+  --advice-title: #53ffaa;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  background: var(--body-bg);
+  color: var(--text-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container {
+  background: var(--container-bg);
+  border-radius: 15px;
+  box-shadow: 30px 50px 80px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 48px 60px;
+  width: 540px;
+  height: fit-content;
+  text-align: center;
+  gap: 24px;
+  position: relative;
+}
+.advice-title {
+  text-transform: uppercase;
+  color: var(--advice-title);
+  font-size: 0.8125rem;
+  letter-spacing: 0.25rem;
+}
+.advice-content {
+  font-size: 1.75rem;
+  letter-spacing: -0.01875rem;
+  margin-bottom: 20px;
+}
+.dice-img {
+  width: 24px;
+  height: 24px;
+}
+.dice-img-bg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: var(--advice-title);
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 280ms ease-in-out;
+}
+.dice-img-bg:hover {
+  box-shadow: 0px 0px 40px 0px #53ffaa;
+  transition: box-shadow 280ms ease-in-out;
+}
+@media (max-width: 767px) {
+  .main-container {
+    width: calc(100% - 32px);
+    padding: 24px 24px 56px;
+  }
+  .advice-title {
+    font-size: 0.6875rem;
+    letter-spacing: 0.216rem;
+  }
+  .advice-content {
+    font-size: 1.5rem;
+    letter-spacing: -0.016rem;
+    margin-bottom: 10px;
+  }
+}

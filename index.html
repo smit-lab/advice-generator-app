@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Adive generator app</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <p class="advice-title">advice #<span id="advice_title">1</span></p>
+      <h2 class="advice-content" id="advice_content">
+        “It is easy to sit up and take notice, what's difficult is getting up
+        and taking action.”
+      </h2>
+      <picture class="pattern-divider">
+        <source
+          media="(max-width: 768px)"
+          srcset="./images/pattern-divider-mobile.svg"
+        />
+        <source
+          media="(min-width: 769px)"
+          srcset="./images/pattern-divider-desktop.svg"
+        />
+        <img src="./images/pattern-divider-desktop.svg" alt="" />
+      </picture>
+      <button class="dice-img-bg" id="dice_button">
+        <img src="./images/icon-dice.svg" alt="" class="dice-img" />
+      </button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
